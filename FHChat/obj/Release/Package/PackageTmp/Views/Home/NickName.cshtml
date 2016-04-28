@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "NickName";
+}
+
+<h2>Entre com seu nick</h2>
+<div class="container">
+    <div id="nick">
+            
+              @using(Html.BeginForm("NickNamePost", "Home",FormMethod.Post)){  
+                
+                @Html.TextBox("nickname");
+                
+                <button type="submit" name="Entrar">Entrar</button>
+              }
+    </div>
+</div>
+
+
